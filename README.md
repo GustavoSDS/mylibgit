@@ -95,3 +95,7 @@
 
 - Si quieres rehacer la confirmación, puedes reconfirmar con la opción --amend
     > git commit --amend
+
+- Deshacer un Archivo Preparado
+    > git reset HEAD name-file
+    > git reset --hard HEAD name-file
