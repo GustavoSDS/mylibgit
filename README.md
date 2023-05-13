@@ -160,3 +160,38 @@
     > git log --oneline --decorate
 - Cambiar de Rama
     > git checkout name-branch
+
+### Procedimientos Básicos para Ramificar y Fusionar
+
+- Procedimientos Básicos de Ramificación
+    > git checkout -b iss53 //crear y cambiar de rama
+- Fusionar ramas
+    > git merge name-rama-a-fusionar
+- Eliminar ramas
+    > git branch -d name-rama
+
+### Gestión de Ramas
+
+- git branch
+- git branch -v  
+- git branch --merged //ver ramas fusionadas con la actual
+- git branch --no-merged // "" no "" con la actual
+
+### Flujos de Trabajo Ramificados
+
+_**Ramas de Largo Recorrido**_
+
+- Examples
+    > git checkout -b develop
+    > git checkout -b topic
+    > git checkout -b proposed
+
+_**Ramas Puntuales**_
+
+- Examples
+    > git checkout -b iss53
+    > git checkout -b iss91
+    > git checkout -b iss92v2
+    > git checkout -b dumbidea
+
+### Ramas Remotas
