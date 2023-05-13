@@ -6,3 +6,19 @@
 CMakeSettings.json
 .vs
 .idea
+#ignora los archivos terminados en .a
+*.a
+#pero no lib.a, aun cuando los archivos terminados en .a en la linea anterior
+!lib.a
+
+#ignora unicamente el archivo TODO de la raiz, no subdir/TODO
+/TODO
+
+#ignora todos los archivos de directorio buid/
+buid/
+
+#ignora doc/notes.txt, pero no este: doc/server/arch.txt
+doc/*.txt
+
+#ignora todos los archivos .txt del directorio doc/
+doc/**/*.txt
