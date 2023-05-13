@@ -14,4 +14,4 @@
 > - git diff | git diff name-file
 > - git diff --staged/cached
 > - git commit -m "Message for commit"
-> -
+> - git commit -a -m "Message for commit"
