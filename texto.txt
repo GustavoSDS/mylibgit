@@ -1,0 +1,138 @@
+* commit 13a82860c69fc1d68446a65f0304c8053199c706
+| Author: GustavoSDS <simondossantos18@gmail.com>
+| Date:   Sat May 13 13:54:55 2023 -0300
+| 
+|     Add new text in line 17
+| 
+* commit cf56d87422fba25166e24657899895c9ec345e54
+| Author: GustavoSDS <simondossantos18@gmail.com>
+| Date:   Sat May 13 13:50:07 2023 -0300
+| 
+|     Add and remove news lines in file README
+| 
+* commit b82527211485f0b2d7cb6d0dd4a472a7cb8be219
+| Author: GustavoSDS <simondossantos18@gmail.com>
+| Date:   Sat May 13 13:47:15 2023 -0300
+| 
+|     Add new line in file README
+| 
+* commit 1fdb66a5246609a24179d174334e9f27dc91aba9
+| Author: GustavoSDS <simondossantos18@gmail.com>
+| Date:   Sat May 13 13:35:16 2023 -0300
+| 
+|     Edit file README, add new line whit command diff
+| 
+* commit 0cb44ffc6f6172f7835dcc899e15fa48a3f5de68
+| Author: GustavoSDS <simondossantos18@gmail.com>
+| Date:   Sat May 13 12:35:57 2023 -0300
+| 
+|     new files add in gitigore
+| 
+* commit 004005fb4ecf8584cc2c861b98b27197850b11da
+| Author: GustavoSDS <simondossantos18@gmail.com>
+| Date:   Sat May 13 12:14:39 2023 -0300
+| 
+|     new file LICENSE.md and file README.md modified whit text the learnig in course git comand
+|   
+*   commit 905e4d19c2c401cef3964c2e28bf64b0dad77331
+|\  Merge: 3a4e08a78 ebf2991f0
+| | Author: Edward Thomson <ethomson@edwardthomson.com>
+| | Date:   Sat May 13 14:33:23 2023 +0100
+| | 
+| |     Merge pull request #5722 from libgit2/ethomson/tlsdata_fail
+| |     
+| |     Thread-local storage: handle failure cases
+| | 
+| * commit ebf2991f06d8831ed23524a068210b8103b5f604
+| | Author: Edward Thomson <ethomson@edwardthomson.com>
+| | Date:   Tue Dec 8 19:46:25 2020 +0000
+| | 
+| |     threadstate: don't use an unnecessary macro
+| |     
+| |     Now that we've reduced the usage of GIT_THREADSTATE, remove it entirely
+| |     in favor of git_threadstate_get().
+| | 
+| * commit 4f76ef568d74c63031eb42fc10bf08b5641e5f0b
+| | Author: Edward Thomson <ethomson@edwardthomson.com>
+| | Date:   Tue Dec 8 19:28:44 2020 +0000
+| | 
+| |     oid: don't assume thread local state was initialized
+| |     
+| |     git_oid_tostr_s could fail if thread-local state initialization fails.
+| |     In that case, it will now return `NULL`.  Callers should check for
+| |     `NULL` and propagate the failure.
+| | 
+| * commit ce488be46e4cd2aeeb69c39a062fae1ba9a302f6
+| | Author: Edward Thomson <ethomson@edwardthomson.com>
+| | Date:   Tue Dec 8 19:28:01 2020 +0000
+| | 
+| |     errors: don't rely on tls data working
+| |     
+| |     Thread-local storage data may fail to initialize; in this case, do not
+| |     try to set the error message into it.  When the thread state has not
+| |     been initialized, return a hardcoded message to that affect.
+| | 
+| * commit 4be63a68667d3c75a3da36b3bc8045459a360906
+|/  Author: Edward Thomson <ethomson@edwardthomson.com>
+|   Date:   Tue Dec 8 18:01:03 2020 +0000
+|   
+|       errors: drop unneccessary g_git prefix
+| 
+* commit 3a4e08a78b41528b82aaa9c087a55242cefecf2f
+| Merge: c87a3f8f6 7eb63188e
+| Author: Edward Thomson <ethomson@edwardthomson.com>
+| Date:   Sat May 13 13:45:19 2023 +0100
+| 
+|     Merge pull request #6488 from libgit2/ethomson/workflow
+|     
+|     actions: simplify execution with composite action
+|   
+*   commit c87a3f8f6c698e62bc95f801755db8c4281bebe7
+|\  Merge: 213d35ea6 027630ddd
+| | Author: Edward Thomson <ethomson@edwardthomson.com>
+| | Date:   Sat May 13 13:42:24 2023 +0100
+| | 
+| |     Merge pull request #6561 from libgit2/ethomson/xdiff
+| |     
+| |     Update xdiff to git 2.40.1's version
+| | 
+| * commit 027630ddd42e5ab4f4f5a221f38a3fd5bda4e3d4
+| | Author: Edward Thomson <ethomson@edwardthomson.com>
+| | Date:   Thu May 11 21:44:17 2023 +0100
+| | 
+| |     xdiff: update to xdiff from git 2.40.1
+| | 
+| * commit a821455ee430d28d0032b91ba89b414b4b724464
+|   Author: Edward Thomson <ethomson@edwardthomson.com>
+|   Date:   Thu May 11 21:43:38 2023 +0100
+|   
+|       util: add GIT_UNUSED_ARG
+|       
+|       Add `GIT_UNUSED_ARG` which is an attribute for arguments, for
+|       compatibility with dependencies.
+| 
+* commit 213d35ea6d69598693b7f4b5b737aa98c91ba98e
+| Merge: 2bbcdee6b 333573857
+| Author: Edward Thomson <ethomson@edwardthomson.com>
+| Date:   Fri May 12 22:24:49 2023 +0100
+| 
+|     Merge pull request #6558 from DimitryAndric/fix-qsort-variants-2
+|     
+|     Work around -Werror problems when detecting qsort variants
+| 
+* commit 333573857960fa7260f01f38a2003bafa2313a87
+| Author: Edward Thomson <ethomson@edwardthomson.com>
+| Date:   Fri May 12 21:49:29 2023 +0100
+| 
+|     cmake: refactor `check_prototype_definition`
+|     
+|     Introduce `check_prototype_definition_safe` that is safe for `Werror`
+|     usage.
+| 
+* commit 767a9a733ca64928d395318a9cda47822241b879
+  Author: Edward Thomson <ethomson@edwardthomson.com>
+  Date:   Fri May 12 21:33:45 2023 +0100
+  
+      cmake: simplify QSORT names
+      
+      `QSORT_R` and `QSORT_S` -> `QSORT`
