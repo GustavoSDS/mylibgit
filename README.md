@@ -99,3 +99,64 @@
 - Deshacer un Archivo Preparado
     > git reset HEAD name-file
     > git reset --hard HEAD name-file
+- Deshacer un Archivo Modificado
+    > git checkout -- name-file
+
+### Trabajar con Remotos
+
+- Ver tus romotos
+    > git remote
+    > git remote -v
+
+- Añadir Repositorios Remotos
+    > git remote add [name] [URL]
+- Traer y Combinar Remotos
+    > git fetch [remote-name] -> traer datos del remoto
+    > git pull [remote-name]  -> combinar remoto con local
+    > git clone [remote-name] -> clonar un remoto
+
+- Enviar a Tus Remotos
+    > git push [nombre-remoto] [nombre-rama]
+- Inspeccionar un Remoto
+    > git remote show [nombre-remote]
+- Eliminar y Renombrar Remotos
+    > git remote rename [old-name] [new-name]
+    > git remote rm [remote-name]
+
+### Etiquetado (Version)
+
+- Listar Tus Etiquetas
+    > git tag
+    > git tag -l "version-search"/"1.6.*"
+- Crear Etiquetas
+  - Etiquetas Anotadas
+    > git tag -a v1.4 -m "my version 1.4"
+  - Etiquetas ligeras
+    > git tag v1.4-lw
+- Mostrar detalles de la version
+    > git show vnumber
+- Etiquetado Tardío
+    > git tag -a v1.2 checksum
+- Compartir Etiquetas
+    > git push origin vtag
+    > git push origin --tags //send all tags
+- Sacar una Etiqueta
+    > git checkout -b version2 v2.0.0
+
+### Alias de Git
+
+> git config --global alias.co checkout
+> git config --global alias.br branch
+> git config --global alias.ci commit
+> git config --global alias.st status
+
+## Ramificaciones en Git
+
+### Crear una Rama Nueva
+
+> git branch name-branch
+
+- Mostrar a donde apunta cada rama
+    > git log --oneline --decorate
+- Cambiar de Rama
+    > git checkout name-branch
