@@ -196,3 +196,12 @@ _**Ramas Puntuales**_
 - Eliminar y Renombrar Remotos
     > git remote rename [old-name] [new-name]
     > git remote rm [remote-name]
+
+### Hacer Seguimiento a las Ramas
+
+- Preparar otras ramas de seguimiento si deseas tener unas que sigan ramas de otros remotos
+    > git checkout --track origin/[name-rama]
+- Preparar una rama local con un nombre distinto a la del remoto
+    >  git checkout -b [name-rama] origin/[name-rama]
+- Cambiar la rama a la que le haces seguimiento
+    > git branch -u origin/[name-rama]
