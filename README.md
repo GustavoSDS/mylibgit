@@ -120,6 +120,7 @@
 
 - Enviar a Tus Remotos
     > git push [nombre-remoto] [nombre-rama]
+    > git push -u [nombre-remoto] [nombre-rama]
 - Inspeccionar un Remoto
     > git remote show [nombre-remote]
 - Eliminar y Renombrar Remotos
