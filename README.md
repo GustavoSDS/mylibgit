@@ -223,5 +223,11 @@ actualizados
 
 ### Reorganización Básica
 
-- > git rebase [name-rama]
-- > git rebase --onto main [name-rama1] [name-rama2]
+- > git rebase [name-rama1]
+  > git merge [name-rama2]
+
+### Algunas Reorganizaciones Interesantes
+
+- Imagina que decides incorporar tus cambios del lado cliente sobre el proyecto principal para hacer un lanzamiento de versión; pero no quieres lanzar aún los cambios del lado servidor porque no están aún suficientemente probados
+    > git rebase --onto main [name-rama1] [name-rama2]
+    > git merge [name-rama2]
