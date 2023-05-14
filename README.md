@@ -1,16 +1,11 @@
-# Course the git in terminal
-
-## Estoy aprendiendo sobre los estados
-
-> - **Staged**
-> - **Modified**
-> - **Unmodified**
-> - **Untraked**
+# CURSO DE GIT EN BASE A LA DOCS
 
 - **File Config global**
     > git config --global -e
 
-### Guardando cambios en el repositorio
+> git init
+
+## GUARDANDO CAMBIOS EN EL REPOSITORIO
 
 1. _**Revisando el Estado de tus Archivos**_
 
@@ -52,7 +47,7 @@
     - Si quieres renombrar un archivo en Git
         >  git mv file_from file_to
 
-### Ver historial de confirmaciones
+## VER HISTORIAL DE CONFIRMACIONES
 
 > **git log**
 
@@ -83,7 +78,7 @@
 - Muestra un gráfico ASCII con la historia de ramificaciones y uniones
     > git log --graph
 
-#### Limitar la Salida del Historial
+### Limitar la Salida del Historial
 
 - Este comando lista todas las confirmaciones que cumplan las especificaciones
     > git log --sice=2.weeks
@@ -94,7 +89,7 @@
     > git log --committer="name committ"
     > git log --after|until|before
 
-### Deshacer Cosas
+## DESHACER COSAS
 
 - Si quieres rehacer la confirmación, puedes reconfirmar con la opción --amend
     > git commit --amend
@@ -105,29 +100,7 @@
 - Deshacer un Archivo Modificado
     > git checkout -- name-file
 
-### Trabajar con Remotos
-
-- Ver tus romotos
-    > git remote
-    > git remote -v
-
-- Añadir Repositorios Remotos
-    > git remote add [name] [URL]
-- Traer y Combinar Remotos
-    > git fetch [remote-name] -> traer datos del remoto
-    > git pull [remote-name]  -> combinar remoto con local
-    > git clone [remote-name] -> clonar un remoto
-
-- Enviar a Tus Remotos
-    > git push [nombre-remoto] [nombre-rama]
-    > git push -u [nombre-remoto] [nombre-rama]
-- Inspeccionar un Remoto
-    > git remote show [nombre-remote]
-- Eliminar y Renombrar Remotos
-    > git remote rename [old-name] [new-name]
-    > git remote rm [remote-name]
-
-### Etiquetado (Version)
+## ETIQUETADO (Version)
 
 - Listar Tus Etiquetas
     > git tag
@@ -147,14 +120,14 @@
 - Sacar una Etiqueta
     > git checkout -b version2 v2.0.0
 
-### Alias de Git
+## ALIAS EN GIT
 
 > git config --global alias.co checkout
 > git config --global alias.br branch
 > git config --global alias.ci commit
 > git config --global alias.st status
 
-## Ramificaciones en Git
+## RAMIFICACIONES EN GIT
 
 ### Crear una Rama Nueva
 
@@ -174,14 +147,14 @@
 - Eliminar ramas
     > git branch -d name-rama
 
-### Gestión de Ramas
+## GESTION DE RAMAS
 
 - git branch
 - git branch -v  
 - git branch --merged //ver ramas fusionadas con la actual
 - git branch --no-merged // "" no "" con la actual
 
-### Flujos de Trabajo Ramificados
+## FLUJOS DE TRABAJO RAMIFICADOS
 
 _**Ramas de Largo Recorrido**_
 
@@ -198,11 +171,27 @@ _**Ramas Puntuales**_
     > git checkout -b iss92v2
     > git checkout -b dumbidea
 
-### Ramas Remotas
+## RAMAS REMOTAS
 
-- Recuperar todo el contenido del remoto
-    > git fetch name-remote
+### Trabajar con Remotos
+
+- Ver tus romotos
+    > git remote
+    > git remote -v
+- Añadir Repositorios Remotos
+    > git remote add [name] [URL]
 - Publicar
-    > git push [remote] [rama]
+    > git push [nombre-remoto] [nombre-rama]
+    > git push -u [nombre-remoto] [nombre-rama]
+    > git push -u -f [origin] [git@github.com:gsds/project.git]
+- Traer y Combinar Remotos
+    > git fetch [remote-name] -> traer datos del remoto
+    > git pull [remote-name]  -> combinar remoto con local
+    > git clone [remote-name] -> clonar un remot
 - Credencial
     > git config --global credential.helper cache
+- Inspeccionar un Remoto
+    > git remote show [nombre-remote]
+- Eliminar y Renombrar Remotos
+    > git remote rename [old-name] [new-name]
+    > git remote rm [remote-name]
