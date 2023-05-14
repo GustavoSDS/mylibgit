@@ -7,6 +7,9 @@
 > - **Unmodified**
 > - **Untraked**
 
+- **File Config global**
+    > git config --global -e
+
 ### Guardando cambios en el repositorio
 
 1. _**Revisando el Estado de tus Archivos**_
@@ -195,3 +198,10 @@ _**Ramas Puntuales**_
     > git checkout -b dumbidea
 
 ### Ramas Remotas
+
+- Recuperar todo el contenido del remoto
+    > git fetch name-remote
+- Publicar
+    > git push [remote] [rama]
+- Credencial
+    > git config --global credential.helper cache
