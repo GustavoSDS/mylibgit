@@ -224,4 +224,4 @@ actualizados
 ### Reorganización Básica
 
 - > git rebase [name-rama]
-- > git rebase --onto master server client
+- > git rebase --onto main [name-rama1] [name-rama2]
