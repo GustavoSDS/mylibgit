@@ -184,6 +184,7 @@ _**Ramas Puntuales**_
     > git push [nombre-remoto] [nombre-rama]
     > git push -u [nombre-remoto] [nombre-rama]
     > git push -u -f [origin] [git@github.com:gsds/project.git]
+    > git remote set-url origin https_link_to_repository
 - Traer y Combinar Remotos
     > git fetch [remote-name] -> traer datos del remoto
     > git pull [remote-name]  -> combinar remoto con local
