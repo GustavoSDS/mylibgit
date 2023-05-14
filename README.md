@@ -205,3 +205,5 @@ _**Ramas Puntuales**_
     >  git checkout -b [name-rama] origin/[name-rama]
 - Cambiar la rama a la que le haces seguimiento
     > git branch -u origin/[name-rama]
+- Ver las ramas de seguimiento que tienes asignadas
+    > git branch --v
