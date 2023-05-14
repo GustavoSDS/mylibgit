@@ -207,3 +207,20 @@ _**Ramas Puntuales**_
     > git branch -u origin/[name-rama]
 - Ver las ramas de seguimiento que tienes asignadas
     > git branch --v
+- Si quieres tener los cambios por delante y por detrás
+actualizados
+    > git fetch --all; git branch -vv
+
+### Traer y Fusionar
+
+- > git pull origin [name-rama]
+
+### Eliminar Ramas Remotas
+
+- > git push origin -delete [name-rama]
+
+## REORGANIZAR EL TRABAJO REALIZADO
+
+### Reorganización Básica
+
+- > git rebase [name-rama]
